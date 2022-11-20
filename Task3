@@ -173,9 +173,89 @@ int i,arr[arr_size]={0},size=0,iter=0,temp=0;
 	    temp[i]=arr[i];
     	printf("element arr of j in %d\n",temp[i]); 
 	}*/
- 
-
+	
+     /* 
+     //sort arr
+         int i,arr[arr_size]={0},size=0,iter=0,temp=0;
+    printf("arr size = ");
+    scanf("%d",&size);
+    
+    for(i=0;i<size;i++)
+    {
+        printf("element %d in arr =",i);
+        scanf("%d",&arr[i]);
+    }
+    for(iter=0;iter<size-1;iter++)
+    {
+        for(i=0;i<size-1-iter;i++)
+        {
+            if(arr[i]>arr[i+1])
+            {
+                temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
+            }
+        }
+    }
+    printf("after sorting\n");
+    for(i=0;i<size;i++)
+    {
+        printf("%d\n",arr[i]);
+    }*/
+    
 }
+/************************** pointer *************************/
+/*
+#include <stdio.h>
+
+int main()
+{
+// create & initialize
+    char character = 'C';
+    int integer = 1;
+    float real = 10.4f;
+    long long biginteger = 989898989ll;
+    printf("Value of character = %c, Address of character = %u\n", character, &character);
+    printf("Value of integer = %d, Address of integer = %u\n", integer, &integer);
+    printf("Value of real = %f, Address of real = %u\n", real, &real);
+    printf("Value of biginteger = %lld, Address of biginteger = %u", biginteger, &biginteger);
+    
+    /*
+    //add two numbers 
+    int num1, num2, sum;
+    int *ptr1, *ptr2;
+    ptr1 = &num1; 
+    ptr2 = &num2; 
+    printf("Enter any two numbers: ");
+    scanf("%d%d", ptr1, ptr2);
+    sum = *ptr1 + *ptr2;
+    printf("Sum = %d", sum);
+    */
+    
+    /* 
+    // input and print array use ptr
+    int arr[MAX_SIZE];
+    int N, i;
+    int * ptr = arr;  
+    printf("Enter size of array: ");
+    scanf("%d", &N);
+    printf("Enter elements in array:\n");
+    for (i = 0; i < N; i++)
+    {
+        scanf("%d", ptr);
+        ptr++;   
+    }
+    ptr = arr;
+    printf("Array elements: ");
+    for (i = 0; i < N; i++)
+    {
+        printf("%d, ", *ptr);
+        ptr++;
+    }
+}
+*/
+}
+*/
 
 /************************** Swap ****************************/
 /*
@@ -216,8 +296,7 @@ int main()
     x = x ^ y;
     printf("x = %d y = %d",x,y);
     */
-}*/
-
+}*
  
 
 
