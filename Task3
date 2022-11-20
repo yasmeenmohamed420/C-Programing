@@ -257,6 +257,87 @@ int main()
 }
 */
 
+/*
+//swap 2 num
+#include <stdio.h>
+
+void swap(int * num1, int * num2);
+
+int main()
+{
+    int num1, num2;
+    printf("Enter two numbers: ");
+    scanf("%d%d", &num1, &num2);
+    printf("Before swapping in main n");
+    printf("Value of num1 = %d \n", num1);
+    printf("Value of num2 = %d \n\n", num2);
+    swap(&num1, &num2);
+    printf("After swapping in main n");
+    printf("Value of num1 = %d \n", num1);
+    printf("Value of num2 = %d \n\n", num2);
+    return 0;
+}
+void swap(int * num1, int * num2)
+{
+    int temp;
+    temp = *num1;
+    *num1= *num2;
+    *num2= temp;
+    printf("After swapping in swap function n");
+    printf("Value of num1 = %d \n", *num1);
+    printf("Value of num2 = %d \n\n", *num2);
+}
+*/
+/*
+//copy arr to ather 
+#include <stdio.h>
+
+#define MAX_SIZE 100 
+
+void printArray(int arr[], int size);
+
+int main()
+{
+    int source_arr[MAX_SIZE], dest_arr[MAX_SIZE];
+    int size, i;
+    int *source_ptr = source_arr; 
+    int *dest_ptr   = dest_arr;   
+    int *end_ptr;
+
+    printf("Enter size of array: ");
+    scanf("%d", &size);
+    printf("Enter elements in array: ");
+    for (i = 0; i < size; i++)
+    {
+        scanf("%d", (source_ptr + i));
+    }
+    end_ptr = &source_arr[size - 1];
+    printf("\nSource array before copying: ");
+    printArray(source_arr, size);
+
+    printf("\nDestination array before copying: ");
+    printArray(dest_arr, size);
+    while(source_ptr <= end_ptr)
+    {
+        *dest_ptr = *source_ptr;
+        source_ptr++;
+        dest_ptr++;
+    }
+    printf("\n\nSource array after copying: ");
+    printArray(source_arr, size);
+    printf("\nDestination array after copying: ");
+    printArray(dest_arr, size);
+    return 0;
+}
+void printArray(int *arr, int size)
+{
+    int i;
+    for (i = 0; i < size; i++)
+    {
+        printf("%d, ", *(arr + i));
+    }
+}*/
+
 /************************** Swap ****************************/
 /*
 //using Addition & Subtraction
