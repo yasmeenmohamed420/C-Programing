@@ -253,6 +253,39 @@ int i,arr[arr_size]={0},size=0,iter=0,temp=0;
    {
         printf("%d",arr[i]);
    }*/
+   
+   /*
+   //separate odd & even
+   int i=0,size=0;
+   int even=0,odd=0 ;
+   int arr[ Arr_size]={0};
+   int arr1[even],arr2[odd];
+   printf("Plz enter arr size : ");
+   scanf("%d",&size);
+   
+   for(i=0;i<size;i++)
+   {
+       printf("Element %d in arr = ",i);
+       scanf("%d",&arr[i]);
+   }
+   printf("arr of even num = ");
+   for(i=0;i<size;i++)
+	{
+	    if((arr[i]%2)==0)
+	    {
+	        arr[even]=arr[i];
+           printf(" %d \n",arr[even]);
+	    }
+	}
+	printf("arr of odd num = ");
+	for(i=0;i<size;i++)
+	{
+	    if((arr[i]%2)==1)
+	    {
+	        arr[odd]=arr[i];
+           printf(" %d \n",arr[odd]);
+	    }
+	}*/
     
 }
 /************************** pointer *************************/
