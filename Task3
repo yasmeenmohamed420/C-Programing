@@ -203,6 +203,57 @@ int i,arr[arr_size]={0},size=0,iter=0,temp=0;
         printf("%d\n",arr[i]);
     }*/
     
+    /*
+    //Search element
+    int i=0,size=0 , Num_search=0, found=0,index=0;
+   int arr[ Arr_size]={0};
+   printf("Plz enter arr size : ");
+   scanf("%d",&size);
+   
+   for(i=0;i<size;i++)
+   {
+       printf("Element %d in arr = ",i);
+       scanf("%d",&arr[i]);
+   }
+   
+   printf("Enter num search = ");
+   scanf("%d",&Num_search);
+   
+   for(i=0;i<size;i++)
+   {
+       if(arr[i]==Num_search)
+       {
+           found=1;
+           break;
+       }
+   }
+   if(found==1)
+   {
+       found=i;
+       printf("%d",found);
+   }
+   else
+   {
+       printf("not found");
+   }*/
+   /*
+   //reverse arr
+   int i=0,size=0 ;
+   int arr[ Arr_size]={0};
+   printf("Plz enter arr size : ");
+   scanf("%d",&size);
+   
+   for(i=0;i<size;i++)
+   {
+       printf("Element %d in arr = ",i);
+       scanf("%d",&arr[i]);
+   }
+   
+   for(i=size-1;i>=0;i--)
+   {
+        printf("%d",arr[i]);
+   }*/
+    
 }
 /************************** pointer *************************/
 /*
